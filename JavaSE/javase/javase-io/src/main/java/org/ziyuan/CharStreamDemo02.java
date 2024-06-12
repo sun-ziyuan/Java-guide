@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
+ * 读取多个数据，读到末尾返回-1
  * @author szy
  * @description
  * @date 2024/6/11 15:53
@@ -17,8 +18,11 @@ public class CharStreamDemo02 {
         char[] chars = new char[2];
         int read;
         while ((read = fileReader.read(chars)) != -1){
-            char read1 = (char) read;
-            System.out.println(read1);
+            // 把数组中的数据变成字符串再进行打印
+            System.out.print( new String(chars,0,read));
         }
+
+        // 3.自动释放资源
+        fileReader.close();
     }
 }
