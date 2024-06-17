@@ -50,4 +50,22 @@ public class CharStreamDemo03 {
         // 3. 释放资源
         fileWriter.close();
     }
+
+    @Test
+    public void test4() throws IOException {
+        // 1. 创建字符输出流对象
+        FileWriter fw = new FileWriter("fw.txt");
+        // 2. 写数据
+        char[] chars = "今天是个好日子".toCharArray(); // 字符串转换为字节数组
+        fw.write(chars);                 // 写出字符数组
+        fw.write(chars,2,2);    // 写出从索引2开始,2个字节
+
+        // 关闭资源
+        fw.close();
+    }
+
+    @Test
+    public void test5(){
+
+    }
 }
