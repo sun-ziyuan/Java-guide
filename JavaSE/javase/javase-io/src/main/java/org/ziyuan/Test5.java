@@ -12,10 +12,10 @@ public class Test5 {
     public static void main(String[] args) throws IOException {
         // 四种方式拷贝文件,并统计各自用时
         long start = System.currentTimeMillis();
-        // method1(); -586460
-        //method2();
-        //method3();
-        //method4();
+        //method1();     // 531.044秒
+        //method2();     // 0.339秒
+        //method3();     // 2.353秒
+        //method4();     // 0.414秒
         long end = System.currentTimeMillis();
         System.out.println((end - start)/1000.0 +"秒");
 
