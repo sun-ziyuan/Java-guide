@@ -1,4 +1,4 @@
-package org.ziyuan.prototype.demo.shallowcopy;
+package org.ziyuan.prototype.shallowcopy;
 
 public class ObjectClone{
     public static void main(String[] args) throws CloneNotSupportedException {

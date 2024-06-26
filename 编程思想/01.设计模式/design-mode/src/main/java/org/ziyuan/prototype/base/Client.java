@@ -1,4 +1,4 @@
-package org.ziyuan.prototype.demo.base;
+package org.ziyuan.prototype.base;
 
 
 /**

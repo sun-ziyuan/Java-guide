@@ -1,4 +1,4 @@
-package org.ziyuan.prototype.demo.shallowcopy;
+package org.ziyuan.prototype.shallowcopy;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
