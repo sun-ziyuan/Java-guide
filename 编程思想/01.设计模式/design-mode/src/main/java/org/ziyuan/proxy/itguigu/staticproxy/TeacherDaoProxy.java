@@ -1,4 +1,4 @@
-package org.ziyuan.proxy;
+package org.ziyuan.proxy.itguigu.staticproxy;
 
 /**
  * @author szy
