@@ -14,6 +14,7 @@ public class Clinet {
         // 3. proxyInstance=class com.sun.proxy.$Proxy0  内存中动态生成了代理对象
         System.out.println("proxyInstance="+proxyInstance.getClass());
         proxyInstance.teach();
+        proxyInstance.sayHello("tom");
 
     }
 }

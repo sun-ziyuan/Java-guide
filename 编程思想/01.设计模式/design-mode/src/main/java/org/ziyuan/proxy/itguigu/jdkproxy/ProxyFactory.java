@@ -26,9 +26,9 @@ public class ProxyFactory {
          */
         return Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(),
                 /**
-                 * Object proxy:  代理对象和proxyObject对象是同一个对象,在invoke方法中基本不用
-                 * Method method: 对接口中的方法进行封装的method对象
-                 * Object[] args: 调用方法的实际参数
+                 * Object proxy:  代理对象,在invoke方法中基本不用
+                 * Method method: 对应于在代理对象上调用的接口方法的 Method 实例
+                 * Object[] args: 代理对象调用接口方法时传递的实际参数
                  * 返回值: 方法的返回值
                  */
                 (proxy, method, args)->{
