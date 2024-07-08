@@ -10,8 +10,10 @@ package org.ziyuan.singleton;
 public class Mgr05 {
     // 1. 定义一个静态实例
     private static Mgr05 INSTANCE;
+    // 2. 私有化构造器
+    private Mgr05(){}
 
-    // 2. 对外提供一个静态方法获取对象
+    // 3. 对外提供一个静态方法获取对象
     public static Mgr05 getInstance(){
         if(INSTANCE == null){
             // 视图通过减小同步代码块的方式,提高效率,然后不可行
