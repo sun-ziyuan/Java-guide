@@ -1,9 +1,9 @@
-package org.ziyuan.adapter.itguigu.classadapter;
+package org.ziyuan.adapter.itguigu.objectadapter;
 
 /**
- * 被适配器类
+ * 被适配者类(Adaptee)
  * @author sunziyuan
- * @date 2024/7/10 22:24
+ * @date 2024/7/10 22:54
  */
 public class Voltage220 {
     // 输出220伏功率
