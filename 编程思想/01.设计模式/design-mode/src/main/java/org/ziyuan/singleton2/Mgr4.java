@@ -9,7 +9,7 @@ package org.ziyuan.singleton2;
  */
 public class Mgr4 {
     // 1. 定义一个静态实例
-    private static  Mgr4 INSTANCE;
+    private static Mgr4 INSTANCE;
 
     // 2. 私有化构造器
     private Mgr4(){}
@@ -33,21 +33,9 @@ public class Mgr4 {
 //    }
 
     // 3. ③ 同步方法,线程安全
-//    public static synchronized Mgr4 getInstance(){
-//        if(INSTANCE == null){
-//            INSTANCE = new Mgr4();
-//        }
-//        return INSTANCE;
-//    }
-
-    // 3. ④ 双重检查锁
-    public static Mgr4 getInstance(){
+    public static synchronized Mgr4 getInstance(){
         if(INSTANCE == null){
-            synchronized (Mgr4.class){
-                if(INSTANCE == null){
-                    INSTANCE = new Mgr4();
-                }
-            }
+            INSTANCE = new Mgr4();
         }
         return INSTANCE;
     }
