@@ -10,8 +10,6 @@ import lombok.ToString;
  * @description 羊
  * @date 2024/6/24 17:10
  */
-@Getter
-@Setter
 @AllArgsConstructor
 @ToString
 public class Sheep implements Cloneable{

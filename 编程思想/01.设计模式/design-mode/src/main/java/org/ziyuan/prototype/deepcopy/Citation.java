@@ -1,14 +1,10 @@
 package org.ziyuan.prototype.deepcopy;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.io.Serializable;
 
-@Getter
-@Setter
-@ToString
+@Data
 public class Citation implements Cloneable, Serializable {
     private Student student;
 
@@ -20,4 +16,11 @@ public class Citation implements Cloneable, Serializable {
     public void show(){
         System.out.println(student.getName()+"同学: 在2020学年第一学期期中表现优秀,被评为三好学生。特发此状!! ");
     }
+}
+
+@Data
+@AllArgsConstructor
+class Student implements Serializable {
+    // 学生姓名
+    private String name;
 }
