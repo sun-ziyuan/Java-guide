@@ -5,7 +5,7 @@ package org.ziyuan.adapter.news.interface_adapter;
  * @description
  * @date 2024/7/17 17:05
  */
-public class ProductUnifyyOrder extends PayGatewayAdapter{
+public class ProductUnifyOrder extends PayGatewayAdapter{
 
     @Override
     public void unifiedOrder() {

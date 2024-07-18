@@ -15,7 +15,7 @@ public class Client {
 //        };
 //        payGatewayAdapter.query();
         // 统一订单管理
-        ProductUnifyyOrder unifyyOrder = new ProductUnifyyOrder();
+        ProductUnifyOrder unifyyOrder = new ProductUnifyOrder();
         unifyyOrder.unifiedOrder();
         // VIP订单管理
         ProductVipOrder vipOrder = new ProductVipOrder();
