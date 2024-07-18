@@ -8,7 +8,7 @@ package org.ziyuan.adapter.news.class_adapter;
 public class Client {
     public static void main(String[] args) {
         System.out.println("=====类适配器模式======");
-        IVoltage5V iVoltage5V = new VoltageAdapter(new Voltage220V());
+        IVoltage5V iVoltage5V = new VoltageAdapter();
         iVoltage5V.output5V();
     }
 }
